@@ -17,6 +17,7 @@
         }
         #container
         {
+            padding-bottom: 10px;
             background-color: #464646;
             width: 40%;
             margin: auto;
@@ -46,6 +47,9 @@
             width: 100px;
             margin: 40px;
         }
+        #start{
+            cursor: pointer;
+        }
         @media only screen and (max-width: 600px) {
             #container
             {
@@ -67,6 +71,7 @@
             <input type="submit" id="submit" value="Submit">
         </form>
         <div id="result_section">
+            <h3 id="start"></h3>
             <p>Previous Guesses  : <span id="prev_guess"></span></p>
             <p>Remaining Guesses : <span id="remaining"></span></p>
             <p id="ans"></p>

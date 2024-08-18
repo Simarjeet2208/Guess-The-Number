@@ -5,7 +5,7 @@ let remaining_guess = document.getElementById('remaining');
 let answer = document.getElementById('ans');
 let submit = document.getElementById('submit')
 let result_section = document.getElementById('result_section')
-
+let new_game_button = document.getElementById('start')
 let playGame = true;
 let guessArray = [];
 let numGuess = 1;
@@ -77,7 +77,7 @@ function gameEnd(){
     input.value = '';
     input.setAttribute('disabled','')
     p.classList.add('button');
-    p.innerHTML = '<h3 id = "start">Start New Game</h3>'
+    new_game_button.innerHTML = 'Start New Game'
     result_section.appendChild(p)
     playGame = false;
     newGame()
